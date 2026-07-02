@@ -1,0 +1,101 @@
+const projects = [
+  {
+    id: "shubh-city",
+    name: "Shubh City",
+    location: "Main Delhi Road, Jaipur",
+    description:
+      "Shubh City offers well-planned, spacious homes in Jaipur with modern comforts, premium amenities, and a vibrant community where living meets elevated family lifestyle.",
+    amenities: [
+      "Swimming Pool",
+      "Reading room",
+      "Kids Play Area",
+      "Indoor Games room",
+      "Yoga Deck",
+      "Gym",
+      "Home delivery services",
+      "Banquet hall",
+      "Guest Room",
+      "Laundary",
+    ],
+    image: "/images/shubh-city/Shubh City Apartments.jpg",
+  },
+  {
+    id: "palm-studio",
+    name: "Palm Studio",
+    location: "Main Delhi Road, Jaipur",
+    description:
+      "Palm Studio by Shubham Group brings modern studio apartments in Jaipur with smart design, stylish comfort, and amenities like a gym, pool, and mini theater crafted for today’s lifestyle.",
+    amenities: [
+      "GYMNASIUM",
+      "YOGA Room",
+      "LIBRARY",
+      "Indoor Games room",
+      "INDOOR GAMES",
+      "CAFETERIA",
+      "LAUNDRY",
+    ],
+  },
+  {
+    id: "aditya-villa",
+    name: "Aditya Villa",
+    location: "Tonk Road, Jaipur",
+    description:
+      "Aditya Villa offers stylish villas in Jaipur, combining modern design with comfort. Enjoy serene surroundings and premium amenities for a truly elevated living experience.",
+    amenities: [
+      "Open gym",
+      "Kids play area",
+      "Jogging track",
+      "Yoga park",
+      "Meditation area",
+      "Senior citizen area",
+      "Sitting bench",
+      "Community hall",
+      "Temple",
+      "Commercial shops",
+    ],
+  },
+  {
+    id: "shubh-villa",
+    name: "Shubh Villa",
+    location: "Ajmer Road, Jaipur",
+    description:
+      "Shubh Villa offers elegant, spacious villas in Jaipur with modern layouts, premium amenities, and a lifestyle of comfort and luxury.",
+    amenities: [
+      "Swimming Pool",
+      "Skating Ring",
+      "Yoga Deck",
+      "Kid's Play Area",
+      "Club Area",
+      "Library",
+      "Indoor Games Area",
+      "Badminton Court",
+      "Senior Citizen's Communal Area",
+      "Designer Walk-Ways",
+      "Yoga Corner",
+    ],
+  },
+  {
+    id: "shubh-nikunj",
+    name: "Shubh Nikunj",
+    location: "Mohanpur, Jaipur",
+    description:
+      "Shubh Nikunj offers ready-to-move 2 & 3 BHK apartments in Jaipur, combining smart design, modern comforts, and amenities like a pool, gym, and mini theater for a refined lifestyle.",
+    amenities: [
+      "SWIMMING POOL",
+      "GYMNASIUM",
+      "JOGGING TRACK",
+      "KIDS PLAY AREA",
+      "INDOOR GAMES",
+      "MINI THEATER",
+      "GUEST ROOMS",
+      "COMMUNITY HALL",
+      "LIBRARY",
+      "YOGA DECK",
+      "ROOF TOP GARDEN",
+      "SENIOR CITIZEN AREA",
+      "CCTV SECURITY",
+    ],
+  },
+];
+
+export { projects };
