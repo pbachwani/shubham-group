@@ -5,6 +5,7 @@ import SectionHeading from "@/components/ui/SectionHeading";
 
 import React from "react";
 import Craft from "@/components/ui/Craft";
+import Team from "@/components/Team";
 
 const About = () => {
   return (
@@ -39,6 +40,7 @@ const About = () => {
       <FutureValues />
       <Legacy />
       <Craft />
+      <Team />
 
       {/* Dreams Section */}
       {/* <section className="w-full min-h-svh px-4 md:px-20 py-10">

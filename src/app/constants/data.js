@@ -34,6 +34,7 @@ const projects = [
       "CAFETERIA",
       "LAUNDRY",
     ],
+    image: "/images/palm-studio/plam-studio1.jpg",
   },
   {
     id: "aditya-villa",
@@ -53,6 +54,7 @@ const projects = [
       "Temple",
       "Commercial shops",
     ],
+    image: "/images/aditya-villa/ADITYA VILLA  VIEW09.jpg",
   },
   {
     id: "shubh-villa",
@@ -73,6 +75,7 @@ const projects = [
       "Designer Walk-Ways",
       "Yoga Corner",
     ],
+    image: "/images/shubh-villa/2.jpg",
   },
   {
     id: "shubh-nikunj",
@@ -95,6 +98,7 @@ const projects = [
       "SENIOR CITIZEN AREA",
       "CCTV SECURITY",
     ],
+    image: "/images/shubh-nikunj/nikunj/Aerial 1-new.jpg",
   },
 ];
 

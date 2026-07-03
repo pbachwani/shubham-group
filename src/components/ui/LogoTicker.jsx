@@ -17,11 +17,11 @@ export default function LogoTicker() {
   return (
     <section className="py-12 overflow-x-clip">
       <div className="mx-auto space-y-10">
-        <h3 className="text-center text-black/50 text-xl">
+        {/* <h3 className="text-center text-black/50 text-xl">
           Already chosen by these market leaders
-        </h3>
+        </h3> */}
         <div
-          className={`flex overflow-hidden bg-blue-300/0 mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]`}
+          className={`flex overflow-hidden mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]`}
         >
           <motion.div
             animate={{ x: "-50%" }}
