@@ -4,6 +4,7 @@ import { useRef } from "react";
 import CountUp from "./ui/CountUp";
 import AnimatedHeading from "./ui/AnimatedHeading";
 import Image from "next/image";
+import { motion } from "motion/react";
 
 export default function Legacy() {
   const imageRef = useRef(null);
@@ -86,11 +87,18 @@ export default function Legacy() {
               </div>
 
               {/* Description */}
-              <p className="text-lg md:text-xl text-white/70 leading-relaxed text-justify max-w-md">
+
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.2, delay: 0.8, ease: "easeOut" }}
+                className="text-lg md:text-xl text-white/70 leading-relaxed text-justify max-w-md"
+              >
                 Indulge in a first-class journey with our premium limousine
                 services. Whether for a special occasion or everyday luxury, we
                 ensure every ride is exceptional.
-              </p>
+              </motion.p>
             </div>
           </div>
 
