@@ -48,6 +48,7 @@ export default function Hero() {
             text={"Shubham Group"}
             tag="h1"
             delay={0.6}
+            duration={1.2}
             className="font-tabular font-semibold md:text-[80px] text-4xl text-white/80 mt-10"
           />
         </div>
@@ -56,7 +57,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
-          className="md:text-[30px] text-xl w-fit md:px-5 md:py-3 py-3 px-1.5 rounded-xl max-w-200 text-justify"
+          className="md:text-[30px] text-xl w-fit md:py-3 py-3 px-1.5 rounded-xl max-w-200 text-justify"
         >
           {words.map((word, wordIndex) => (
             <span

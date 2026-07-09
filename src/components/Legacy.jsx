@@ -39,7 +39,7 @@ export default function Legacy() {
         />
 
         {/* Stats and Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-end">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-end mt-4">
           {/* Left Section - Stats */}
           <div className="lg:col-span-2 flex flex-col md:gap-10">
             {/* Top Stats - 3 columns */}

@@ -6,7 +6,7 @@ import { ChevronsRight } from "lucide-react";
 const ProjectCard = ({ image, title, description, href = "/about" }) => {
   return (
     <Link href={href}>
-      <div className="flex flex-col gap-4 shadow-lg shadow-[#621C1D]/20 border-[#621C1D]/40 rounded-sm overflow-hidden cursor-pointer shrink-0 md:w-90 w-80 h-full group">
+      <div className="flex flex-col gap-4 shadow-lg shadow-[#621C1D]/30 rounded-sm overflow-hidden cursor-pointer shrink-0 md:w-90 w-80 h-full group">
         {/* Image Container */}
         <div className="relative w-full aspect-5/3 overflow-hidden bg-gray-200 shrink-0">
           <img

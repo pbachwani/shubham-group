@@ -12,6 +12,7 @@ export default function AnimatedHeading({
   className = "",
   tag = "h1",
   stagger = 0.05,
+  duration = 0.6,
   delay = 0.2,
 }) {
   const ref = useRef(null);
@@ -31,7 +32,7 @@ export default function AnimatedHeading({
       {
         opacity: 0,
         y: "100%",
-        duration: 0.6,
+        duration: duration,
         ease: "power3.out",
         stagger: stagger,
         delay: delay,

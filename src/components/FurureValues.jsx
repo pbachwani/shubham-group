@@ -95,7 +95,14 @@ export default function FutureValues() {
         </div>
 
         {/* Image Placeholder - attached to cursor */}
-        <div
+        {/* code here */}
+      </div>
+    </section>
+  );
+}
+
+{
+  /* <div
           ref={imageRef}
           className="max-md:hidden w-40 h-auto rounded-2xl overflow-hidden transition-transform duration-100 ease-out pointer-events-none absolute"
           style={{
@@ -114,16 +121,6 @@ export default function FutureValues() {
                 className="w-full h-full object-cover -z-50 opacity-60"
               />
             )}
-            {/* {hovered === "vision" && (
-              <motion.img
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 0.6 }}
-                exit={{ opacity: 0 }}
-                src="/images/vision.jpg"
-                alt=""
-                className="w-full h-full object-cover -z-50 opacity-60"
-              />
-            )} */}
             {hovered === "" && (
               <motion.img
                 initial={{ opacity: 0 }}
@@ -135,8 +132,5 @@ export default function FutureValues() {
               />
             )}
           </AnimatePresence>
-        </div>
-      </div>
-    </section>
-  );
+        </div> */
 }

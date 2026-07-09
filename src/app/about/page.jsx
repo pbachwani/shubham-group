@@ -6,6 +6,7 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import React from "react";
 import Craft from "@/components/ui/Craft";
 import Team from "@/components/Team";
+import Founders from "@/components/Founders";
 
 const About = () => {
   return (
@@ -40,6 +41,7 @@ const About = () => {
       <FutureValues />
       <Legacy />
       <Craft />
+      <Founders />
       <Team />
 
       {/* Dreams Section */}

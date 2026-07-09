@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "motion/react";
 const links = [
   {
     label: "Phone",
-    href: "tel:+917240200200",
+    href: "tel:+917427876297",
   },
   {
     label: "WhatsApp",
@@ -54,7 +54,7 @@ export default function MiniLink() {
                   },
                 }}
                 exit={{ opacity: 0, x: 15 }}
-                className="rounded-full border border-white/10 bg-white px-4 py-2 text-sm text-black shadow-lg backdrop-blur"
+                className="rounded-full border border-white/10 bg-white/20 px-4 py-2 text-sm font-semibold text-black shadow-lg backdrop-blur"
               >
                 {link.label}
               </motion.a>
@@ -66,9 +66,9 @@ export default function MiniLink() {
       <motion.button
         whileTap={{ scale: 0.95 }}
         onClick={() => setOpen((prev) => !prev)}
-        className="flex px-4 py-2 items-center justify-center rounded-full bg-white text-black shadow-xl text-nowrap"
+        className="flex px-4 py-2 items-center justify-center rounded-full bg-white/30 backdrop-blur-lg font-bold text-[#EA7726] shadow-md text-nowrap"
       >
-        more info
+        Inquire Now
       </motion.button>
     </div>
   );
