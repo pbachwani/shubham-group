@@ -15,7 +15,7 @@ const projectsData = [
     title: "Palm Studio",
     description:
       "Palm Studio by Shubham Group brings modern studio apartments in Jaipur with smart design, stylish comfort, and amenities like a gym, pool, and mini theater crafted for today's lifestyle.",
-    cover: "/images/palm-studio/plam-studio1.jpg",
+    cover: "/images/final-data/palm-studio/1.webp",
   },
   {
     id: 3,

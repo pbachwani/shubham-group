@@ -61,7 +61,7 @@ const Elegance = () => {
     <section className="w-full h-[150svh] lg:h-[200svh] relative overflow-hidden flex flex-col justify-center items-start">
       {/* Full screen image component */}
       <FullScreenImage
-        src="/images/palm-studio/plam-studio1.jpg"
+        src="/images/final-data/palm-studio/1.webp"
         alt="Palm Studio"
       />
 
