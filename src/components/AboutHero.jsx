@@ -1,6 +1,6 @@
 "use client";
 
-import { useScroll, useTransform } from "motion/react";
+import { useScroll, useTransform, motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
@@ -31,7 +31,7 @@ export default function AboutHero() {
         {/* Video background - contained within sticky div */}
         <div className="absolute inset-0 -z-10 bg-black overflow-hidden">
           <video
-            src="/videos/hero-bg1.mp4"
+            src="/videos/about-bg.mp4"
             autoPlay
             loop
             muted
@@ -47,11 +47,17 @@ export default function AboutHero() {
             text={"What We Stand For"}
             tag="h1"
             delay={0.6}
+            duration={1.2}
             className="font-tabular font-semibold md:text-[80px] text-4xl text-white/80 mt-10"
           />
         </div>
 
-        <p className="md:text-[30px] text-xl w-fit md:px-5 md:py-3 py-3 px-1.5 rounded-xl max-w-200 text-justify">
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1 }}
+          className="md:text-[30px] text-xl w-fit md:px-5 md:py-3 py-3 px-1.5 rounded-xl max-w-200 text-justify"
+        >
           {words.map((word, wordIndex) => (
             <span
               key={wordIndex}
@@ -63,7 +69,7 @@ export default function AboutHero() {
               {`${word} `}
             </span>
           ))}
-        </p>
+        </motion.p>
       </div>
     </section>
   );

@@ -6,11 +6,13 @@ import React from "react";
 import { motion } from "motion/react";
 
 const logos = [
-  { name: "Quantum", image: "/images/project-logos/1.png" },
-  { name: "Acme Corp", image: "/images/project-logos/2.png" },
-  { name: "Echo Valley", image: "/images/project-logos/3.png" },
-  { name: "Pulse", image: "/images/project-logos/4.png" },
-  { name: "Outside", image: "/images/project-logos/5.png" },
+  { name: "Shubham Group", image: "/images/project-logos/1.png" },
+  { name: "Aditya Villa", image: "/images/project-logos/2.png" },
+  { name: "Palm Studio", image: "/images/project-logos/3.png" },
+  { name: "Shubh City", image: "/images/project-logos/4.png" },
+  { name: "STM", image: "/images/project-logos/5.png" },
+  { name: "Shubh Nikunj", image: "/images/project-logos/6.png" },
+  { name: "Shubh Villa", image: "/images/project-logos/7.png" },
 ];
 
 export default function LogoTicker() {

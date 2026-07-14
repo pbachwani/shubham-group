@@ -20,9 +20,9 @@ const Projects = () => {
             >
               {/* Image left */}
               <div className="lg:w-3/5 h-full bg-green-300/0 overflow-hidden rounded-sm">
-                {project.image && (
+                {project.cover && (
                   <img
-                    src={project.image}
+                    src={project.cover}
                     alt=""
                     className="w-full h-full object-cover group-hover:block transition-all duration-300 ease-out hover:scale-105"
                   />

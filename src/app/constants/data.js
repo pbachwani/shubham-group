@@ -16,7 +16,25 @@ const projects = [
       // "Guest Room",
       // "Laundary",
     ],
-    image: "/images/shubh-city/Shubh City Apartments.jpg",
+    cover: "/images/shubh-city/Shubh City Apartments.jpg",
+    images: [
+      "/images/final-data/shubh-city/1.webp",
+      "/images/final-data/shubh-city/2.webp",
+      "/images/final-data/shubh-city/3.webp",
+      "/images/final-data/shubh-city/4.webp",
+      "/images/final-data/shubh-city/5.webp",
+      "/images/final-data/shubh-city/6.webp",
+      "/images/final-data/shubh-city/7.webp",
+      "/images/final-data/shubh-city/8.webp",
+      "/images/final-data/shubh-city/9.webp",
+      "/images/final-data/shubh-city/10.webp",
+      "/images/final-data/shubh-city/11.webp",
+      "/images/final-data/shubh-city/12.webp",
+    ],
+
+    plan: [
+      { name: "Full", image: "/images/final-data/shubh-city/plan/full.svg" },
+    ],
   },
   {
     id: "palm-studio",
@@ -32,7 +50,17 @@ const projects = [
       // "Cafeteria",
       "Laundry",
     ],
-    image: "/images/palm-studio/plam-studio1.jpg",
+    cover: "/images/palm-studio/palm-studio1.jpg",
+    images: [
+      "/images/final-data/palm-studio/1.webp",
+      "/images/final-data/palm-studio/2.webp",
+    ],
+    plan: [
+      { name: "Full", image: "/images/final-data/palm-studio/plan/Full.svg" },
+      { name: "A", image: "/images/final-data/palm-studio/plan/A.svg" },
+      { name: "B", image: "/images/final-data/palm-studio/plan/B.svg" },
+      { name: "C", image: "/images/final-data/palm-studio/plan/C.svg" },
+    ],
   },
   {
     id: "aditya-villa",
@@ -52,7 +80,22 @@ const projects = [
       "Temple",
       "Commercial shops",
     ],
-    image: "/images/aditya-villa/ADITYA VILLA  VIEW09.jpg",
+    cover: "/images/aditya-villa/ADITYA VILLA  VIEW09.jpg",
+    images: [
+      "/images/final-data/aditya-villa/1.webp",
+      "/images/final-data/aditya-villa/2.webp",
+      "/images/final-data/aditya-villa/3.webp",
+      "/images/final-data/aditya-villa/4.webp",
+      "/images/final-data/aditya-villa/5.webp",
+      "/images/final-data/aditya-villa/6.webp",
+      "/images/final-data/aditya-villa/7.webp",
+    ],
+    plan: [
+      { name: "Full", image: "/images/final-data/shubh-city/plan/Full.svg" },
+      { name: "A", image: "/images/final-data/shubh-city/plan/A.svg" },
+      { name: "B", image: "/images/final-data/shubh-city/plan/B.svg" },
+      { name: "C", image: "/images/final-data/shubh-city/plan/C.svg" },
+    ],
   },
   {
     id: "shubh-villa",
@@ -73,7 +116,12 @@ const projects = [
       // "Designer Walk-Ways",
       // "Yoga Corner",
     ],
-    image: "/images/shubh-villa/2.jpg",
+    cover: "/images/shubh-villa/2.jpg",
+    images: [
+      "/images/final-data/shubh-villa/1.webp",
+      "/images/final-data/shubh-villa/2.webp",
+      "/images/final-data/shubh-villa/3.webp",
+    ],
   },
   {
     id: "shubh-nikunj",
@@ -96,7 +144,16 @@ const projects = [
       // "Senior Citizen Area",
       // "🛡️ CCTV Security",
     ],
-    image: "/images/shubh-nikunj/nikunj/Aerial 1-new.jpg",
+    cover: "/images/shubh-nikunj/nikunj/Aerial 1-new.jpg",
+    images: [
+      "/images/final-data/shubh-nikunj/1.webp",
+      "/images/final-data/shubh-nikunj/2.webp",
+      "/images/final-data/shubh-nikunj/3.webp",
+      "/images/final-data/shubh-nikunj/4.webp",
+      "/images/final-data/shubh-nikunj/5.webp",
+      "/images/final-data/shubh-nikunj/6.webp",
+      "/images/final-data/shubh-nikunj/7.webp",
+    ],
   },
 ];
 

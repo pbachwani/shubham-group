@@ -3,14 +3,14 @@ import React from "react";
 import Link from "next/link";
 import { ChevronsRight } from "lucide-react";
 
-const ProjectCard = ({ image, title, description, href = "/about" }) => {
+const ProjectCard = ({ cover, title, description, href = "/about" }) => {
   return (
     <Link href={href}>
       <div className="flex flex-col gap-4 shadow-lg shadow-[#621C1D]/30 rounded-sm overflow-hidden cursor-pointer shrink-0 md:w-90 w-80 h-full group">
         {/* Image Container */}
         <div className="relative w-full aspect-5/3 overflow-hidden bg-gray-200 shrink-0">
           <img
-            src={image}
+            src={cover}
             alt={title}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ease-out"
           />

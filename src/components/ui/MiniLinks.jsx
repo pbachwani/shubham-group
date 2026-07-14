@@ -26,7 +26,7 @@ export default function MiniLink() {
 
   return (
     <div
-      className="fixed bottom-6 right-6 z-50"
+      className="fixed bottom-4 right-8 z-50"
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
     >
@@ -54,7 +54,7 @@ export default function MiniLink() {
                   },
                 }}
                 exit={{ opacity: 0, x: 15 }}
-                className="rounded-full border border-white/10 bg-white/20 px-4 py-2 text-sm font-semibold text-black shadow-lg backdrop-blur"
+                className="rounded-full border border-white/10 bg-black/20 px-4 py-2 text-sm font-semibold text-white shadow-lg backdrop-blur"
               >
                 {link.label}
               </motion.a>
@@ -66,7 +66,7 @@ export default function MiniLink() {
       <motion.button
         whileTap={{ scale: 0.95 }}
         onClick={() => setOpen((prev) => !prev)}
-        className="flex px-4 py-2 items-center justify-center rounded-full bg-white/30 backdrop-blur-lg font-bold text-[#EA7726] shadow-md text-nowrap"
+        className="flex px-4 py-2 items-center justify-center rounded-full bg-black/30 backdrop-blur-lg font-bold text-accent shadow-md text-nowrap"
       >
         Inquire Now
       </motion.button>

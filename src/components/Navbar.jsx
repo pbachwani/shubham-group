@@ -4,16 +4,15 @@ import React from "react";
 const Navbar = () => {
   return (
     <nav className="fixed top-0 w-full h-fit z-50">
-      <div className="w-full h-full flex items-center justify-between md:px-10 px-4 md:py-2 py-10 relative">
-        <div>
-          <Link href="/">
-            <img
-              src="/images/logo-small.png"
-              alt="Shubham Group Logo"
-              className="md:h-15 h-12 w-auto object-contain"
-            />
-          </Link>
-        </div>
+      <div className="w-full h-full flex items-center justify-between md:px-10 px-4 py-2 relative">
+        <Link href="/">
+          <img
+            src="/images/logo-black.png"
+            alt="Shubham Group Logo"
+            className="md:h-15 h-12 w-auto object-contain"
+          />
+        </Link>
+
         <div className="max-md:hidden absolute left-1/2 -translate-x-1/2 flex gap-8 bg-black/50 px-10 py-2 rounded-xl text-white mix-blend-difference font-bold font-tabular uppercase">
           <Link href="/" className="">
             Home
