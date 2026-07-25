@@ -11,6 +11,7 @@ export async function generateStaticParams() {
 export default async function ProjectDetail({ params }) {
   const { projectId } = await params;
   const project = projects.find((p) => p.id === projectId);
+  console.log(project.amenities[0]);
 
   if (!project)
     return (
@@ -31,14 +32,24 @@ export default async function ProjectDetail({ params }) {
       </div>
       <ProjectHero project={project} />
       <section className="w-full h-full flex flex-col items-center justify-center gap-0">
-        <span className="uppercase text-accent font-bold opacity-70 animate-pulse pt-2">
-          drag to see more
+        <span className="text-sm text-accent font-bold opacity-40 animate-pulse pt-2">
+          [drag to see more]
         </span>
         <ImageMarqueeScroll
           baseVelocity={2}
           height={620}
           images={project.images}
         />
+      </section>
+
+      <section className="w-full h-full flex flex-col items-center min-h-screen justify-center">
+        <div className="flex flex-col gap-4 w-full">
+          {project.amenities.map((amenity, i) => (
+            <div key={i}>
+              <p className="text-black">{amenity}</p>;
+            </div>
+          ))}
+        </div>
       </section>
     </main>
   );

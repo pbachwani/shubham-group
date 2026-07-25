@@ -27,7 +27,7 @@ export default function AboutHero() {
 
   return (
     <section ref={scrollTarget} className="w-full relative h-[200dvh]">
-      <div className="w-full h-svh flex flex-col py-30 md:px-20 px-4 gap-20 sticky top-0">
+      <div className="w-full h-screen flex flex-col py-30 md:px-20 px-4 gap-20 sticky top-0">
         {/* Video background - contained within sticky div */}
         <div className="absolute inset-0 -z-10 bg-black overflow-hidden">
           <video
