@@ -25,7 +25,9 @@ const craftItems = [
 
 export default function Founders() {
   useEffect(() => {
-    window.dispatchEvent(new Event("resize"));
+    setTimeout(() => {
+      window.dispatchEvent(new Event("resize"));
+    }, 2000);
   }, []);
   return (
     <section className="bg-[#191919] relative">

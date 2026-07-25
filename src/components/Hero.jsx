@@ -40,9 +40,6 @@ export default function Hero() {
           />
         </div>
 
-        {/* <h1 className="font-tabular font-semibold md:text-[80px] text-4xl text-white/80 mt-10">
-          What We Stand For
-        </h1> */}
         <div>
           <AnimatedHeading
             text={"Shubham Group"}

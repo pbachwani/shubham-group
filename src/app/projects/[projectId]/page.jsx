@@ -46,7 +46,7 @@ export default async function ProjectDetail({ params }) {
         <div className="flex flex-col gap-4 w-full">
           {project.amenities.map((amenity, i) => (
             <div key={i}>
-              <p className="text-black">{amenity}</p>;
+              <p className="text-black text-4xl">{amenity}</p>;
             </div>
           ))}
         </div>

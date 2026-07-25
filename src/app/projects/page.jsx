@@ -9,9 +9,9 @@ import { AnimatePresence, motion } from "motion/react";
 const Projects = () => {
   const totalProjects = projects.length;
   const [hovered, setHovered] = useState("shubh-city");
-  useEffect(() => {
-    window.dispatchEvent(new Event("resize"));
-  }, []);
+  // useEffect(() => {
+  //   window.dispatchEvent(new Event("resize"));
+  // }, []);
   return (
     <main className="w-full min-h-svh h-full ">
       {/* projects section */}

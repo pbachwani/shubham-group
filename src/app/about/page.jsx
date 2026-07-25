@@ -10,7 +10,7 @@ import Founders from "@/components/Founders";
 
 const About = () => {
   return (
-    <main className="w-full h-full min-h-svh flex flex-col relative">
+    <main className="relative">
       {/* About Hero */}
       {/* <section className="w-full h-[200dvh] relative">
         <div className="w-full h-svh flex flex-col py-30 md:px-20 px-4 gap-20">
@@ -42,7 +42,7 @@ const About = () => {
       <Legacy />
       <Craft />
       <Founders />
-      <Team />
+      {/* <Team /> */}
 
       {/* Dreams Section */}
       {/* <section className="w-full min-h-svh px-4 md:px-20 py-10">

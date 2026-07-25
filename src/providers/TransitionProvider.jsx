@@ -57,7 +57,7 @@ export default function TransitionProvider({ children }) {
         {
           scaleX: 1,
 
-          duration: 0.8,
+          duration: 0.7,
           ease: "power3.inOut",
           stagger: {
             each: 0.025,
