@@ -1,11 +1,17 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import { projects } from "../constants/data";
 import Link from "next/link";
 import { MapPin, MoveLeft } from "lucide-react";
 import WhyChooseShubham from "@/components/WhyChooseShubham";
+import { AnimatePresence, motion } from "motion/react";
 
 const Projects = () => {
   const totalProjects = projects.length;
+  const [hovered, setHovered] = useState("shubh-city");
+  useEffect(() => {
+    window.dispatchEvent(new Event("resize"));
+  }, []);
   return (
     <main className="w-full min-h-svh h-full ">
       {/* projects section */}
@@ -16,18 +22,40 @@ const Projects = () => {
             <Link
               href={`/projects/${project.id}`}
               key={project.id}
-              className="w-full max-lg:h-full h-100 min-h-100 flex flex-col lg:flex-row justify-between items-center rounded-sm shadow-xl group transition-all duration-300 ease-out overflow-hidden"
+              onMouseEnter={() => {
+                setHovered(project.id);
+                // console.log(hovered);
+              }}
+              onMouseLeave={() => setHovered(null)}
+              className="w-full max-lg:h-full h-100 min-h-100 flex flex-col lg:flex-row justify-between items-center rounded-sm shadow-xl transition-all duration-300 ease-out overflow-hidden"
             >
               {/* Image left */}
-              <div className="lg:w-3/5 h-full bg-green-300/0 overflow-hidden rounded-sm">
-                {project.cover && (
+              <motion.div className="lg:w-3/5 h-full bg-green-300/0 overflow-hidden rounded-sm relative">
+                <AnimatePresence mode="">
+                  <motion.div
+                    initial={{ opacity: 0, y: "50%", perspective: "600" }}
+                    animate={{ opacity: hovered === project.id ? 1 : 0, y: 0 }}
+                    transition={{ duration: 0.7 }}
+                    className="absolute inset-0 max-lg:hidden text-white p-10 m-8"
+                  >
+                    <div className="flex justify-between h-full items-end">
+                      <p className="bg-black/60 p-4 font-manrope font-semibold hover:text-black hover:bg-accent transition-colors duration-300 ease-out">
+                        Project Location
+                      </p>
+                      <p className="bg-black/60 p-4 font-manrope font-semibold hover:text-black hover:bg-accent transition-colors duration-300 ease-out">
+                        Download Brocture
+                      </p>
+                    </div>
+                  </motion.div>
+                </AnimatePresence>
+                {project?.cover && (
                   <img
                     src={project.cover}
                     alt=""
-                    className="w-full h-full object-cover group-hover:block transition-all duration-300 ease-out hover:scale-105"
+                    className="w-full h-full object-cover"
                   />
                 )}
-              </div>
+              </motion.div>
 
               {/* Content Right */}
               <div className="max-lg:py-10 h-full lg:w-2/5 w-full flex flex-col items-start justify-start px-4 py-4">

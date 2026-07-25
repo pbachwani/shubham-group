@@ -66,7 +66,7 @@ export default function MiniLink() {
       <motion.button
         whileTap={{ scale: 0.95 }}
         onClick={() => setOpen((prev) => !prev)}
-        className="flex px-4 py-2 items-center justify-center rounded-full bg-black/30 backdrop-blur-lg font-bold text-accent shadow-md text-nowrap"
+        className="flex px-4 py-2 items-center justify-center rounded-full bg-black/30 backdrop-blur-lg font-bold text-accent shadow-md text-nowrap text-sm md:text-base"
       >
         Inquire Now
       </motion.button>

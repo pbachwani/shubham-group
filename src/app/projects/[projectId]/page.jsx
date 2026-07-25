@@ -25,7 +25,9 @@ export default async function ProjectDetail({ params }) {
   return (
     <main className="w-full relative">
       <div className="fixed w-fit h-fit bottom-4 left-8 px-4 py-2 rounded-xl bg-black/30 backdrop-blur-lg shadow-md text-nowrap text-accent z-50">
-        <button className="font-semibold">Download Brocture</button>
+        <button className="font-semibold text-sm md:text-base">
+          Download Brocture
+        </button>
       </div>
       <ProjectHero project={project} />
       <section className="w-full h-full flex flex-col items-center justify-center gap-0">

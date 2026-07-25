@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
   const [formData, setFormData] = useState({
@@ -49,7 +50,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-linear-to-b from-[#EA7726] to-[#621C1D] text-white h-full">
+    <footer className="bg-linear-to-b from-[#EA7726] to-[#621C1D] text-white h-full min-h-screen">
       {/* Main Content */}
       <div className="px-6 md:px-12 lg:px-20 py-12 md:py-20">
         {/* Header Section */}
@@ -68,7 +69,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 mb-12">
           {/* Left Column - Contact Info */}
           <div>
-            <h3 className="text-xl md:text-2xl font-semibold mb-6 md:mb-8">
+            <h3 className="text-lg md:text-xl font-semibold mb-6 md:mb-8">
               Reach out to us
             </h3>
 
@@ -76,39 +77,43 @@ export default function Footer() {
               {/* Email */}
               <div className="flex gap-3 items-center">
                 <Mail className="w-5 h-5 md:w-6 md:h-6 shrink-0 mt-1" />
-                <a
+                <Link
                   href="mailto:info@shubhamgroup.com"
                   className="text-sm md:text-base hover:text-orange-200 transition-colors"
                 >
                   info@shubhamgroup.com
-                </a>
+                </Link>
               </div>
 
               {/* Phone */}
               <div className="flex gap-3 items-center">
                 <Phone className="w-5 h-5 md:w-6 md:h-6 shrink-0 mt-1" />
-                <a
+                <Link
                   href="tel:+917240200200"
                   className="text-sm md:text-base hover:text-orange-200 transition-colors"
                 >
                   +91 7240 200 200
-                </a>
+                </Link>
               </div>
 
               {/* Address */}
               <div className="flex gap-3 items-center">
                 <MapPin className="w-5 h-5 md:w-6 md:h-6 shrink-0 mt-1" />
-                <p className="text-sm md:text-base">
+                <Link
+                  href={"/"}
+                  target="_"
+                  className="text-sm md:text-base hover:text-orange-200 transition-colors"
+                >
                   Corporate office S-1-A, Gopalpura Bypass Rd, Jaipur
-                </p>
+                </Link>
               </div>
             </div>
           </div>
 
           {/* Right Column - Contact Form */}
           <div>
-            <p className="text-sm md:text-base text-orange-100 mb-6 md:mb-8">
-              Have one of our associates reach out to you.
+            <p className="text-lg lg:text-xl text-orange-100 mb-6 md:mb-8 font-semibold">
+              Or have one of our associates reach out to you
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-4">

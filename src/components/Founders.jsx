@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "motion/react";
 import AnimatedHeading from "@/components/ui/AnimatedHeading";
+import { useEffect } from "react";
 
 const craftItems = [
   {
@@ -23,6 +24,9 @@ const craftItems = [
 // Committed to Our Craft - Our reputation precedes us, as being purveyors of the most exclusive luxury living experiences in the region. Each property is exquisitely crafted so as to leave an indelible impression that doesn't merely reflect international building standards but defines them.
 
 export default function Founders() {
+  useEffect(() => {
+    window.dispatchEvent(new Event("resize"));
+  }, []);
   return (
     <section className="bg-[#191919] relative">
       <div className="sticky top-0  bg-[#191919] overflow-hidden">
