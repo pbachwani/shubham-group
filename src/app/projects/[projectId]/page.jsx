@@ -30,8 +30,8 @@ export default async function ProjectDetail({ params }) {
     <main className="w-full relative">
       <BroctureButton project={project} />
       <ProjectHero project={project} />
-      <section className="w-full h-full flex flex-col items-center justify-center gap-0">
-        <span className="text-xl md:text-4xl text-accent font-gotu font-bold opacity-40 animate-pulse pt-2 text-left w-full px-4 md:px-20 md:pt-20">
+      <section className="w-full h-full flex flex-col items-center justify-center ">
+        <span className="text-xl md:text-4xl text-accent font-gotu font-bold opacity-40 animate-pulse py-10 text-left w-full px-4 md:px-20 md:pt-20">
           Luxury Crafted for Modern Families
         </span>
         <ImageMarqueeScroll

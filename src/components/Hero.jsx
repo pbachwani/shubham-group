@@ -35,6 +35,7 @@ export default function Hero() {
             src="/videos/hero-bg1.mp4"
             autoPlay
             loop
+            playsInline
             muted
             className="w-full h-full object-cover opacity-60"
           />

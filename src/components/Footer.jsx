@@ -55,7 +55,7 @@ export default function Footer() {
       className="bg-linear-to-b from-[#EA7726] to-[#621C1D] text-white h-full min-h-screen"
     >
       {/* Main Content */}
-      <div className="px-6 md:px-12 lg:px-20 py-12 md:py-20">
+      <div className="px-6 md:px-12 lg:px-20 py-16 md:py-20">
         {/* Header Section */}
         <div className="mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">

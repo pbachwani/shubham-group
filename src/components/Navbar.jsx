@@ -23,25 +23,8 @@ const Navbar = () => {
       <nav
         className={`fixed top-0 inset-0 w-full h-fit z-50 transition-all duration-500 ease-out ${navOpen ? "bg-black" : "bg-none"}`}
       >
-        {/* <div className="md:hidden h-dvh pointer-events-none">
-          <StaggeredMenu
-            position="right"
-            items={menuItems}
-            socialItems={socialItems}
-            displaySocials
-            displayItemNumbering={true}
-            menuButtonColor="#ffffff"
-            openMenuButtonColor="#fff"
-            changeMenuColorOnOpen={true}
-            colors={["#B497CF", "#5227FF"]}
-            logoUrl="/path-to-your-logo.svg"
-            accentColor="#5227FF"
-            onMenuOpen={() => console.log("Menu opened")}
-            onMenuClose={() => console.log("Menu closed")}
-          />
-        </div> */}
-        <div className="w-full h-full flex items-center justify-between md:px-10 px-4 py-2 relative">
-          <Link href="/" className="flex h-full">
+        <div className="w-full h-fit flex items-center justify-between md:px-10 px-4 py-2 relative">
+          <Link href="/" className="flex h-full z-50">
             <AnimatePresence mode="wait">
               {navOpen ? (
                 <img
@@ -70,7 +53,7 @@ const Navbar = () => {
             <Link href="/contact">Contact</Link>
           </div>
 
-          <div className="md:hidden">
+          <div className="md:hidden flex justify-center items-center  z-50">
             <button
               onClick={() => setNavOpen(!navOpen)}
               className="text-[#EA7726] font-extrabold"
@@ -80,14 +63,14 @@ const Navbar = () => {
           </div>
         </div>
         <div
-          className={`md:hidden w-full absolute min-h-screen text-white ${navOpen ? "translate-x-0 bg-black" : "translate-x-full bg-black/10"} transition-transform duration-700 ease-[cubic-bezier(0.23, 1, 0.32, 1)]`}
+          className={`md:hidden w-full absolute min-h-screen text-white pt-2 ${navOpen ? "translate-x-0 bg-black" : "translate-x-full bg-black/10"} transition-transform duration-700 ease-[cubic-bezier(0.23, 1, 0.32, 1)]`}
         >
-          <div className="flex flex-col w-full gap-4 justify-end items-end px-8 py-12">
+          <div className="flex flex-col w-full gap-4 justify-start items-end px-8 py-12">
             {menuItems.map((item, i) => (
               <Link
                 key={i}
                 href={item.link}
-                className="text-3xl"
+                className="text-4xl font-gotu"
                 onClick={() => setNavOpen(!navOpen)}
               >
                 {item.label}

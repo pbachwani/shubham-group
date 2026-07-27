@@ -92,7 +92,7 @@ export default function FloorPlans({ project }) {
           <aside>
             {/* Mobile */}
 
-            <div className="flex lg:hidden gap-3 overflow-x-scroll pb-3">
+            <div className="flex lg:hidden gap-3 overflow-x-scroll w-full pb-3">
               {filters.map((filter) => (
                 <button
                   key={filter}

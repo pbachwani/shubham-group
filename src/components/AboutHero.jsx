@@ -34,6 +34,7 @@ export default function AboutHero() {
             src="/videos/about-bg.mp4"
             autoPlay
             loop
+            playsInline
             muted
             className="w-full h-full object-cover opacity-60"
           />
