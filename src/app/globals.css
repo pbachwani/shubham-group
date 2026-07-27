@@ -5,6 +5,7 @@
   --foreground: #1a1a1a;
   --transition-grid: #8b1b1c;
   --accent: #ea7726;
+  /* --red: "#8B1B1C"; */
   /* --foreground: #191919; */
   /* --transition-grid: #ea7726; */
 }
@@ -30,6 +31,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
+  /* --color-accent-2: var(--red); */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-gotu: var(--font-gotu);

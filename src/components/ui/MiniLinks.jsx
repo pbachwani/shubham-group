@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 
 const links = [
@@ -23,10 +23,29 @@ const links = [
 ];
 export default function MiniLink() {
   const [open, setOpen] = useState(false);
+  const [hide, setHide] = useState(false);
+
+  useEffect(() => {
+    const footer = document.getElementById("footer");
+    if (!footer) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setHide(entry.isIntersecting);
+      },
+      {
+        threshold: 0.2,
+      },
+    );
+
+    observer.observe(footer);
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <div
-      className="fixed bottom-4 right-8 z-50"
+      className={`fixed bottom-4 right-8 z-50 transition-opacity duration-500 ease-out ${hide ? "opacity-0" : "opacity-100"}`}
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
     >

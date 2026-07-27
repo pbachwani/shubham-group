@@ -50,7 +50,10 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-linear-to-b from-[#EA7726] to-[#621C1D] text-white h-full min-h-screen">
+    <footer
+      id="footer"
+      className="bg-linear-to-b from-[#EA7726] to-[#621C1D] text-white h-full min-h-screen"
+    >
       {/* Main Content */}
       <div className="px-6 md:px-12 lg:px-20 py-12 md:py-20">
         {/* Header Section */}
@@ -200,11 +203,11 @@ export default function Footer() {
       <div className="border-t border-white/20"></div>
 
       {/* Bottom Section */}
-      <div className="px-6 md:px-12 lg:px-20 py-6 md:pb-16">
+      <div className="px-6 md:px-12 lg:px-20 py-6">
         <div className="flex flex-col md:flex-row justify-between items-start gap-4 md:gap-0">
           {/* Copyright */}
           <p className="text-xs md:text-sm text-orange-100 text-center md:text-left">
-            Copyright © 2025 - Shubham Group Design & Developed By{" "}
+            Copyright © 2025 - Shubham Group | Design & Developed By{" "}
             <a
               href="https://ideabehind.in"
               target="_blank"

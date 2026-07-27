@@ -26,6 +26,12 @@ export default function ProjectHero({ project }) {
     });
   }, [wordIndex]);
 
+  useEffect(() => {
+    setTimeout(() => {
+      window.dispatchEvent(new Event("resize"));
+    }, 2000);
+  }, []);
+
   return (
     <section ref={scrollTarget} className="w-full relative h-[200dvh]">
       <div className="w-full h-svh flex flex-col py-30 md:px-20 px-4 gap-20 sticky top-0">

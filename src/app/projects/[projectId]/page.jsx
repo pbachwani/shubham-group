@@ -1,4 +1,7 @@
 import { projects } from "@/app/constants/data";
+import FloorPlans from "@/components/FloorPlans.jsx";
+import BroctureButton from "@/components/ui/BroctureButton";
+import HorizontalScroll from "@/components/ui/HorizontalScroll";
 import ImageMarqueeScroll from "@/components/ui/ImageMarqueeScroll";
 import ProjectHero from "@/components/ui/ProjectHero";
 
@@ -25,15 +28,11 @@ export default async function ProjectDetail({ params }) {
 
   return (
     <main className="w-full relative">
-      <div className="fixed w-fit h-fit bottom-4 left-8 px-4 py-2 rounded-xl bg-black/30 backdrop-blur-lg shadow-md text-nowrap text-accent z-50">
-        <button className="font-semibold text-sm md:text-base">
-          Download Brocture
-        </button>
-      </div>
+      <BroctureButton project={project} />
       <ProjectHero project={project} />
       <section className="w-full h-full flex flex-col items-center justify-center gap-0">
-        <span className="text-sm text-accent font-bold opacity-40 animate-pulse pt-2">
-          [drag to see more]
+        <span className="text-xl md:text-4xl text-accent font-gotu font-bold opacity-40 animate-pulse pt-2 text-left w-full px-4 md:px-20 md:pt-20">
+          Luxury Crafted for Modern Families
         </span>
         <ImageMarqueeScroll
           baseVelocity={2}
@@ -42,15 +41,18 @@ export default async function ProjectDetail({ params }) {
         />
       </section>
 
-      <section className="w-full h-full flex flex-col items-center min-h-screen justify-center">
+      {/* <section className="w-full h-full flex flex-col items-center py-20 justify-center">
         <div className="flex flex-col gap-4 w-full">
           {project.amenities.map((amenity, i) => (
             <div key={i}>
-              <p className="text-black text-4xl">{amenity}</p>;
+              <p className="text-black text-4xl">{amenity.name}</p>;
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
+      <HorizontalScroll project={project} />
+
+      <FloorPlans project={project} />
     </main>
   );
 }

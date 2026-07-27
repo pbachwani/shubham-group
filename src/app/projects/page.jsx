@@ -88,7 +88,7 @@ const Projects = () => {
                         key={index}
                         className="border-r-2 last:border-none pr-4 border-[#8B1B1C]"
                       >
-                        <span className="">{amenity}</span>
+                        <span className="">{amenity.name}</span>
                       </div>
                     ))}
                   </div>

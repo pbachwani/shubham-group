@@ -38,7 +38,7 @@ export default function LogoTicker() {
               <React.Fragment key={i}>
                 {logos.map((logo) => (
                   <img
-                    className="grayscale hover:grayscale-0 transition-all h-20 md:h-36 w-auto object-cover"
+                    className="grayscale-50 hover:grayscale-0 transition-all ease-out duration-300 h-20 md:h-36 w-auto object-cover"
                     src={logo.image}
                     key={logo.name}
                     alt={logo.name}
